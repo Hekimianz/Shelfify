@@ -4,10 +4,80 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shelfify</title>
+    <link rel="icon" type="image/x-icon" href="./src/logo.png" />
     <link rel="stylesheet" href="./src/style.css" />
     <script defer src="./src/app.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>Shelfify</h1>
+    <div class="wrapper">
+      <nav class="nav">
+        <img class="logo--img" src="./src/logo.png" alt="shelfify logo" />
+        <span class="logo--name">Shelfify</span>
+      </nav>
+
+      <section class="main--wrapper">
+        <div class="book--wrapper odd">
+          <span class="book--status read"></span>
+          <p class="book--title book--data">The Hobbit</p>
+          <p class="book--author book--data">J.R.R. Tolkien</p>
+          <p class="book--pages book--data">310 pages</p>
+          <span class="material-icons book--edit">edit</span>
+          <span class="material-icons book--delete">delete</span>
+        </div>
+
+        <div class="book--wrapper even">
+          <span class="book--status reading"></span>
+          <p class="book--title book--data">Sophie's World</p>
+          <p class="book--author book--data">Jostein Gaarder</p>
+          <p class="book--pages book--data">518 pages</p>
+          <span class="material-icons book--edit">edit</span>
+          <span class="material-icons book--delete">delete</span>
+        </div>
+
+        <div class="book--wrapper odd">
+          <span class="book--status read"></span>
+          <p class="book--title book--data">Project Hail Mary</p>
+          <p class="book--author book--data">Andy Weir</p>
+          <p class="book--pages book--data">496 pages</p>
+          <span class="material-icons book--edit">edit</span>
+          <span class="material-icons book--delete">delete</span>
+        </div>
+
+        <div class="book--wrapper even">
+          <span class="book--status notRead"></span>
+          <p class="book--title book--data">Clash of Kings</p>
+          <p class="book--author book--data">George R.R. Martin</p>
+          <p class="book--pages book--data">761 pages</p>
+          <span class="material-icons book--edit">edit</span>
+          <span class="material-icons book--delete">delete</span>
+        </div>
+
+        <div class="newBook--wrapper">
+          <span class="material-icons addBook">add</span>
+          <div class="statusLegend">
+            <p class="statusLegend--item">
+              <span class="book--status read"></span> Already Read
+            </p>
+            <p class="statusLegend--item">
+              <span class="book--status reading"></span> Currently Reading
+            </p>
+            <p class="statusLegend--item">
+              <span class="book--status notRead"></span> Not Read Yet
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer>Made with ♥️ by Aram Hekimian</footer>
   </body>
 </html>

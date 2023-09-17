@@ -29,4 +29,4 @@ const addBookToLibrary = function () {
   library.push(new Book(title, author, numPages, readStatus));
 };
 
-addBookToLibrary();
+// addBookToLibrary();
