@@ -44,7 +44,7 @@ const showNewBookForm = function () {
     placeholder="Author"
     class="book--author book--data"
   />
-  <input type="number" placeholder="0" class="book--pages book--data" />
+  <input type="number" placeholder="Number of Pages" class="book--pages book--data" />
   <span class="material-icons confirmBook">add</span>
   <span class="material-icons book--delete">delete</span>
 </div>`;
