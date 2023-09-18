@@ -12,6 +12,5 @@
   "devDependencies": {
     "parcel": "latest"
   },
-  "main": "index.js",
   "description": ""
 }
