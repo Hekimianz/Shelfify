@@ -1,7 +1,6 @@
 {
   "name": "shelfify",
   "version": "1.0.0",
-  "description": "",
   "source": "./index.html",
   "scripts": {
     "start": "parcel index.html",
@@ -11,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.9.3"
-  }
+    "parcel": "latest"
+  },
+  "main": "index.js",
+  "description": ""
 }
