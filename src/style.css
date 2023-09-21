@@ -148,8 +148,69 @@ nav {
   margin-left: 35px;
   background-color: rgba(0, 255, 0, 0.3);
 }
+
 footer {
   text-align: center;
   flex-shrink: 0;
   margin-bottom: 5px;
+}
+
+@media (max-width: 425px) {
+  .book--wrapper {
+    flex-direction: column;
+    height: 250px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .book--data {
+    margin: 0;
+    width: auto;
+  }
+
+  .confirmBook,
+  .book--delete {
+    margin: 0;
+  }
+}
+
+@media (min-width: 425px) {
+  .book--wrapper {
+    flex-direction: row;
+    height: 100px;
+  }
+
+  .book--title {
+    margin-left: 35px;
+  }
+
+  .book--author,
+  .book--pages {
+    margin-left: 15px;
+  }
+
+  .book--data {
+    width: 100px;
+  }
+}
+
+@media (min-width: 765px) {
+  .book--wrapper {
+    flex-direction: row;
+    height: 100px;
+  }
+
+  .book--title {
+    margin-left: 35px;
+  }
+
+  .book--author,
+  .book--pages {
+    margin-left: 75px;
+  }
+
+  .book--data {
+    width: 150px;
+  }
 }
